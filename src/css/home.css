@@ -1,0 +1,123 @@
+*{
+    box-sizing: border-box;
+}
+
+.logo{
+    position: relative;
+    margin-top: 40px;
+    width: 180px;
+    height: 55.3px;
+
+}
+.logo>.squere{
+    display: inline-block;
+    position: relative;
+    background-color: rgba(200, 20, 20, 1);
+    height: 55.29595184326172px;
+    width: 55.2952880859375px;
+
+
+}
+.logo>.squere::before{
+    content: "";
+    position: absolute;
+    z-index: 1;
+    height: 38px;
+    width: 38px;
+    top: 8px;
+    left: 8px;
+    background-color: #fff;
+}
+.logo>.title{
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left:70px;
+    letter-spacing: 1px;
+    font-weight: bolder;
+    color: #163363;
+    font-size: 20px;
+}
+.logo>.desc{
+    top: 43%;
+    position: absolute;
+    display: inline-block;
+    left:70px;
+    color: #163363;
+    font-size: 16px;
+    letter-spacing: 4px;
+}
+.check{
+    top: 60px;
+    position: relative;
+
+}
+.check>.custom-radio{
+
+width: 192px;
+
+    display: flex;
+    justify-content: space-between;
+
+}
+.check>.custom-radio>.personal{
+    padding-right: 10%;
+}
+span.selected{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+}
+span.noselected{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height */
+
+
+    color: #B3B3B3;
+}
+input[type='radio']:after {
+    width: 15px;
+    height: 15px;
+
+    top: -3px;
+    left: -1px;
+    position: relative;
+    background-color: #d1d3d1;
+    content: '';
+    display: inline-block;
+
+    border: 2px solid white;
+}
+
+
+
+input[type='radio']:checked:after {
+    width: 15px;
+    height: 15px;
+
+    top: -3px;
+    left: -1px;
+    position: relative;
+    background-color: #ffa500;
+    content: '';
+    display: inline-block;
+    background-color: rgba(253, 0, 0, 1);
+    border: 2px solid white;
+    border: inset;
+}
+.header-right{
+    margin-top: 16px;
+
+    display: flex;
+    justify-content: space-between;
+}
+.header-right>div:first-child{
+    color: #b75454;
+}
+
